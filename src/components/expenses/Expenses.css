@@ -5,3 +5,9 @@
     width: 50rem;
     max-width: 95%;
   }
+
+  .expenses-no-expense{
+    padding: 1rem;
+    background-color: cornsilk;
+    font-size: larger;
+  }

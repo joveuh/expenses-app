@@ -3,13 +3,10 @@ import React from "react";
 import "./ExpenseFilter.css";
 
 const ExpenseFilter = (props) => {
-
   const onSelectHandler = (event) => {
     props.onSelectMenu(event.target.value);
-    
   };
 
-  
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
