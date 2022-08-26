@@ -1,9 +1,9 @@
 import "./Expenses.css";
 import React, { useState } from "react";
-import ExpenseItem from "./ExpenseItem";
 import Card from "../ui/Card";
 import ExpenseFilter from "./ExpenseFilter";
 import ExpenseList from "./ExpenseList";
+import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
   const [dropDownFilterValue, setDropDownFilterValue] = useState("2020");
@@ -24,6 +24,7 @@ function Expenses(props) {
           onSelectMenu={dropDownFilterHandler}
           onChangeFilter={dropDownFilterValue}
         />
+        <ExpensesChart expenses={filteredItems} />
         <ExpenseList items={filteredItems} />
       </Card>
     </div>
